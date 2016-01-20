@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LLAH.DataLayer;
+using LLAH.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,15 +12,15 @@ namespace LLAH.Api.Web.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public List<Student> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new StudentDataLayer().GetAll();
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public List<Student> Get(int id)
         {
-            return "value";
+            return new StudentDataLayer().GetAll();
         }
 
         // POST api/values

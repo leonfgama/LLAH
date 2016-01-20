@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLAH.Api.Web", "LLAH.Api.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLAH.Model", "LLAH.Model\LLAH.Model.csproj", "{09FED72E-35B8-4513-AFD4-34685D6925C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLAH.DataLayer", "LLAH.DataLayer\LLAH.DataLayer.csproj", "{3D629044-B20A-43F7-9B1A-0483C91472E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAHH.DataAccess", "LAHH.DataAccess\LAHH.DataAccess.csproj", "{B7116965-5F0C-4AB7-9434-3DE1F3E846BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{09FED72E-35B8-4513-AFD4-34685D6925C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09FED72E-35B8-4513-AFD4-34685D6925C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09FED72E-35B8-4513-AFD4-34685D6925C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D629044-B20A-43F7-9B1A-0483C91472E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D629044-B20A-43F7-9B1A-0483C91472E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D629044-B20A-43F7-9B1A-0483C91472E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D629044-B20A-43F7-9B1A-0483C91472E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7116965-5F0C-4AB7-9434-3DE1F3E846BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7116965-5F0C-4AB7-9434-3DE1F3E846BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7116965-5F0C-4AB7-9434-3DE1F3E846BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7116965-5F0C-4AB7-9434-3DE1F3E846BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,6 +9,7 @@ namespace LLAH.Model
 {
     public class Teacher : People
     {
-        
+        public int UserId { get; set; }
+        public virtual User User { get; set; }
     }
 }

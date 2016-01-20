@@ -10,6 +10,9 @@ namespace LLAH.Model
     public class Parent : People
     {
         public string Cpf { get; set; }
+        public int UserId { get; set; }
+        public virtual User User { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
         
     }
 }
