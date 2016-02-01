@@ -1,9 +1,9 @@
+C:\inetpub\wwwroot\LLAH\LLAH.Model\bin\Debug\LLAH.Model.dll.config
 C:\inetpub\wwwroot\LLAH\LLAH.Model\bin\Debug\LLAH.Model.dll
 C:\inetpub\wwwroot\LLAH\LLAH.Model\bin\Debug\LLAH.Model.pdb
-C:\inetpub\wwwroot\LLAH\LLAH.Model\obj\Debug\LLAH.Model.dll
-C:\inetpub\wwwroot\LLAH\LLAH.Model\obj\Debug\LLAH.Model.pdb
-C:\inetpub\wwwroot\LLAH\LLAH.Model\bin\Debug\LLAH.Model.dll.config
 C:\inetpub\wwwroot\LLAH\LLAH.Model\bin\Debug\EntityFramework.dll
 C:\inetpub\wwwroot\LLAH\LLAH.Model\bin\Debug\EntityFramework.SqlServer.dll
 C:\inetpub\wwwroot\LLAH\LLAH.Model\bin\Debug\EntityFramework.xml
 C:\inetpub\wwwroot\LLAH\LLAH.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\inetpub\wwwroot\LLAH\LLAH.Model\obj\Debug\LLAH.Model.dll
+C:\inetpub\wwwroot\LLAH\LLAH.Model\obj\Debug\LLAH.Model.pdb
