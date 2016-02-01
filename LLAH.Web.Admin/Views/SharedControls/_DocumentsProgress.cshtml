@@ -1,0 +1,38 @@
+﻿@model WS33.WS33Model.it_transacao_operacao_progresso
+
+@if (Model != null)
+{
+    double porcentage = (Model.num_qtde_processados > 0) ? (Model.num_qtde_processados * 100) / Model.num_qtde_total : 0;
+    string strPorcentage = porcentage + "%";
+    string progressBarColorClass = "progress-bar-success";
+    string statusHeaderColorClass = string.Empty;
+    if (porcentage <= 30)
+    {
+        progressBarColorClass = "progress-bar-danger";
+        statusHeaderColorClass = "#bd362f";
+    }
+    else if(porcentage <= 80)
+    {
+        progressBarColorClass = "progress-bar-warning";
+        statusHeaderColorClass = "#f89406";
+    }
+    
+    
+        <a href="#" style="color:@statusHeaderColorClass" class="dropdown-toggle" data-toggle="dropdown">
+        <i class="icon-tasks"></i><span class="badge"></span> </a>
+        <ul class="dropdown-menu extended notification">
+            <li class="title">
+                <p>
+                    Progresso</p>
+            </li>        
+            <li><a href="javascript:void(0);"><span class="task"><span class="desc">@Model.num_qtde_processados de @Model.num_qtde_total documentos</span>
+                <span class="percent">@strPorcentage</span> </span>
+                <div class="progress progress-small progress-striped active">
+                    <div style="width: @strPorcentage;" class="progress-bar @progressBarColorClass">
+                    </div>
+                </div>
+            </a></li>        
+            
+        </ul>
+    
+}

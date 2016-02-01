@@ -1,0 +1,40 @@
+﻿@model IList<WS33.WS33Model.Menu>
+<div id="sidebar" class="sidebar-fixed">
+    <div id="sidebar-content">
+        @*	<!-- Search Input -->
+		<form class="sidebar-search">
+			<div class="input-box">
+				<button type="submit" class="submit">
+					<i class="icon-search"></i>
+				</button>
+				<span>
+					<input type="text" placeholder="Pesquisar...">
+				</span>
+			</div>
+		</form>*@
+        <!--=== Navigation ===-->
+        <ul id="nav">
+            <li class="">
+                <a href="@Url.Action("Index", "Home")"><i class="icon-bar-chart"></i>Resumo</a>
+            </li>
+            <li class="current open">
+                <a href="javascript:void(0);">
+                    <i class="icon-desktop"></i>
+                    Integração                    
+                </a>
+                <ul class="sub-menu">
+                        <li class=""><a href="javascript:void(0);"> Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="#"><i class="icon-seach"></i> Sub Home</a></li>
+                            </ul>
+                        </li>
+                        }
+                    }
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="divider" class="resizeable">
+    </div>
+</div>
+<!-- /Sidebar -->

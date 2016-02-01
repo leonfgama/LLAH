@@ -1,0 +1,35 @@
+﻿@using Chubb.Brasil.Web.HtmlObjects
+@{
+    List<BreadCrumb> breadCrumb = new List<BreadCrumb>();
+    if (ViewBag.BreadCrumb != null)
+    {
+        breadCrumb = ((List<BreadCrumb>)ViewBag.BreadCrumb);
+    }    
+}
+
+<!-- Breadcrumbs line -->
+<div class="crumbs">
+	<ul id="breadcrumbs" class="breadcrumb">
+        <li>
+			<i class="icon-home"></i>
+			<a href="@Url.Action("", "")">Home</a>
+		</li>
+        @if (breadCrumb.Count > 0)
+        {
+            foreach (var item in breadCrumb)
+            {
+                <li>
+                    @if (!string.IsNullOrWhiteSpace(item.Url))
+                    {
+                        <a href="@item.Url">@Html.Raw(item.Title)</a>
+                    }
+                    else
+                    {
+                        <span>@Html.Raw(item.Title)</span>
+                    }
+                </li>
+            }
+        }
+	</ul>
+</div>
+<!-- /Breadcrumbs line -->
