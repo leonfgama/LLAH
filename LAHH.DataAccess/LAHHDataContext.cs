@@ -12,6 +12,15 @@ namespace LAHH.DataAccess
 {
     public class LAHHDataContext : DbContext
     {
+        #region [ Commands to use Migrations ]
+        // How to Use Migration, use this commands in Tools --> Library Package Manager --> Package Manager Console
+        // Install
+        //Enable-Migrations -ProjectName ReasonConsulting.TopManager.DataAccess -StartUpProjectName ReasonConsulting.TopManager.Web.Admin -Verbose
+
+        // Update
+        //Update-Database -Force -Verbose -ProjectName LAHH.DataAccess
+        #endregion
+
         public LAHHDataContext()
             : base("LLAHDbContext")
         {            

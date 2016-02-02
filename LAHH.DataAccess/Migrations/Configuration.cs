@@ -3,6 +3,7 @@ namespace LAHH.DataAccess.Migrations
     using LLAH.Model;
     using LLAH.Model.Enum;
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -17,18 +18,10 @@ namespace LAHH.DataAccess.Migrations
 
         protected override void Seed(LAHH.DataAccess.LAHHDataContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            var student1 = new Student() { Id = 1, Name = "Lucas", LastName = "Freitas", Birthday = new DateTime(1993, 7, 11), Genre = GenreType.Man, UserId = 4, CreatedDate = DateTime.Now, Parents = new List<Parent>() };
+            var parent1 = new Parent() { Id = 1, Name = "Pai", LastName = "Freitas", Birthday = new DateTime(1962, 5, 10), Genre = GenreType.Man, UserId = 3, Cpf = "999.999.999-99", CreatedDate = DateTime.Now, Students = new List<Student>() };
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //            
+            parent1.Students.Add(student1);
 
             context.User.AddOrUpdate(
                     new User() { Id = 1, Login = "leonfgama", Email = "leonfgama@hotmail.com", Password = "123", CreatedDate = DateTime.Now, LoginTryNumber = 0, UserType = UserType.Admin,},
@@ -46,12 +39,12 @@ namespace LAHH.DataAccess.Migrations
                     new Teacher() { Id = 1, Name = "Sueli", LastName = "Bezerra", Birthday = new DateTime(1962, 10, 3), Genre = GenreType.Woman, UserId = 2, CreatedDate = DateTime.Now }
                 );
 
-            context.Parent.AddOrUpdate(
-                    new Parent() { Id = 1, Name = "Pai", LastName = "Freitas", Birthday = new DateTime(1962, 5, 10), Genre = GenreType.Man, UserId = 3, Cpf = "999.999.999-99", CreatedDate = DateTime.Now }
+            context.Student.AddOrUpdate(
+                    student1
                 );
 
-            context.Student.AddOrUpdate(
-                    new Student() { Id = 1, Name = "Lucas", LastName = "Freitas", Birthday = new DateTime(1993, 7, 11), Genre = GenreType.Man, UserId = 4, CreatedDate = DateTime.Now }
+            context.Parent.AddOrUpdate(
+                    parent1
                 );
 
             //context.StudentSchool.AddOrUpdate(

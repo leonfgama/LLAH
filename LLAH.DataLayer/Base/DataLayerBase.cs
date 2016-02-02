@@ -90,6 +90,12 @@ namespace LLAH.DataLayer
             return query.ToList();
         }
 
+        public TEntity GetFirst()
+        {
+            DbQuery<TEntity> query = DbSet;
+            return query.First();
+        }
+
         public void InsertOrUpdate(TEntity entity)
         {
             throw new NotImplementedException();
