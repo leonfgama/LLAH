@@ -12,7 +12,7 @@ namespace LLAH.Model
         public string Cpf { get; set; }
         public int UserId { get; set; }
         public virtual User User { get; set; }
-        public virtual ICollection<Student> Students { get; set; }
+        public virtual IList<Student> Students { get; set; }
         
     }
 }

@@ -52,6 +52,7 @@
     <Compile Include="Base\IDataLayer.cs" />
     <Compile Include="Base\UserDataLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ParentDataLayer.cs" />
     <Compile Include="StudentDataLayer.cs" />
   </ItemGroup>
   <ItemGroup>

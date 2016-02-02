@@ -17,6 +17,6 @@ namespace LLAH.Model
         public int UserId { get; set; }
         public virtual Location Location { get; set; }
         public virtual User User { get; set; }
-        public virtual ICollection<Student> Students { get; set; }
+        public virtual IList<Student> Students { get; set; }
     }
 }

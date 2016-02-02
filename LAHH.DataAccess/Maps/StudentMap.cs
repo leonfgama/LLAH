@@ -12,15 +12,6 @@ namespace LAHH.DataAccess.Maps
     {
         public StudentMap()
         {
-
-            //this.HasRequired(x => x.Parents)
-            //    .WithMany()
-            //    .WillCascadeOnDelete(false);
-
-            //this.HasRequired(x => x.Schools)
-            //    .WithMany()
-            //    .WillCascadeOnDelete(false);
-
             this.HasMany<Parent>(s => s.Parents)
                 .WithMany(c => c.Students)                
                 .Map(cs =>

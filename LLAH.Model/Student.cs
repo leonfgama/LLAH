@@ -11,7 +11,7 @@ namespace LLAH.Model
     {
         public int UserId { get; set; }
         public virtual User User { get; set; }
-        public virtual ICollection<School> Schools { get; set; }
-        public virtual ICollection<Parent> Parents { get; set; }
+        public virtual IList<School> Schools { get; set; }
+        public virtual IList<Parent> Parents { get; set; }
     }
 }
